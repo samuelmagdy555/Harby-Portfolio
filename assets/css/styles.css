@@ -194,6 +194,30 @@ img {
 .home__title-color {
   color: var(--first-color);
 }
+
+/* تطبيق الأنيميشن */
+.animated-text {
+  animation: fadeInOut 3s infinite; /* الأنيميشن يعمل بشكل متكرر */
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0; /* اختفاء النص */
+  }
+  50% {
+    opacity: 1; /* ظهور النص */
+  }
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0; /* اختفاء النص */
+  }
+  50% {
+    opacity: 1; /* ظهور النص */
+  }
+}
+
 .home__social {
   display: flex;
   flex-direction: column;
