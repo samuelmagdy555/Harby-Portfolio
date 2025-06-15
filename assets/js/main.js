@@ -55,19 +55,3 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
-
-// جافاسكريبت لتشغيل النافذة المنبثقة
-document.querySelectorAll('.work__img').forEach(item => {
-    item.addEventListener('click', () => {
-      const modal = document.querySelector('.image-modal');
-      const modalImg = modal.querySelector('img');
-      modalImg.src = item.querySelector('img').src;
-      modal.classList.add('active');
-    });
-  });
-  
-  document.querySelector('.image-modal .close').addEventListener('click', () => {
-    const modal = document.querySelector('.image-modal');
-    modal.classList.remove('active');
-  });
-  

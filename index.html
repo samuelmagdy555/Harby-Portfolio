@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/style.css">
 
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -51,7 +51,7 @@
                     <a href="https://www.linkedin.com/in/samuel-magdy-149289230/" class="home__social-icon" target="_blank">
                         <i class='bx bxl-linkedin'></i>
                     </a>
-                    <a href="https://wa.me/message/AXOFXJWO36VTC1" class="home__social-icon" target="_blank">
+                    <a href="https://wa.me/qr/FCJ5JVGZ2ETJB1" class="home__social-icon" target="_blank">
                         <i class='bx bxl-whatsapp'></i>
                     </a>
                     <a href="https://github.com/samuelmagdy555" class="home__social-icon" target="_blank">
@@ -152,37 +152,60 @@
             <!--===== WORK =====-->
             <section class="work section" id="work">
                 <h2 class="section-title">Work</h2>
-              
-                <div class="work__container">
-                  <div class="work__img">
-                    <img src="assets/img/Screenshot_20241008_024120.png" alt="">
-                  </div>
-                  <div class="work__img">
-                    <img src="assets/img/Screenshot_20241008_024237.png" alt="">
-                  </div>
-                  <div class="work__img">
-                    <img src="assets/img/WhatsApp Image 2024-10-08 at 03.50.55_721a814a.jpg" alt="">
-                  </div>
-                  <div class="work__img">
-                    <img src="assets/img/WhatsApp Image 2024-10-08 at 03.51.52_8682c6bc.jpg" alt="">
-                  </div>
-                  <div class="work__img">
-                    <img src="assets/img/Screenshot_20241008_025915.png" alt="">
-                  </div>
-                  <div class="work__img">
-                    <img src="assets/img/Screenshot_20241008_030100.png" alt="">
-                  </div>
-                </div>
-              
-                <!-- نافذة الصورة المنبثقة -->
-                <div class="image-modal">
-                  <span class="close">&times;</span>
-                  <img src="" alt="Modal Image">
-                </div>
-              </section>
-              
 
-            
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="assets/img/Screenshot_20241008_024120.png" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/Screenshot_20241008_024237.png" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/WhatsApp Image 2024-10-08 at 03.50.55_721a814a.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/WhatsApp Image 2024-10-08 at 03.51.52_8682c6bc.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/Screenshot_20241008_025915.png" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/Screenshot_20241008_030100.png" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <div class="contact__card">
+                    <div class="contact__form-container">
+                        <h2 class="section-title contact__title">Contact us</h2>
+                        <form id="contactForm" class="contact__form">
+                            <div class="contact__input-group">
+                                <span class="contact__input-icon"><i class='bx bx-user'></i></span>
+                                <input type="text" id="name" placeholder="Name" class="contact__input" required>
+                            </div>
+                            <div class="contact__input-group">
+                                <span class="contact__input-icon"><i class='bx bx-envelope'></i></span>
+                                <input type="email" id="email" placeholder="Email" class="contact__input" required>
+                            </div>
+                            <div class="contact__input-group">
+                                <span class="contact__input-icon"><i class='bx bx-phone'></i></span>
+                                <input type="tel" id="phone" placeholder="Phone Number" class="contact__input" required>
+                            </div>
+                            <div class="contact__input-group contact__input-group--textarea">
+                                <span class="contact__input-icon"><i class='bx bx-message'></i></span>
+                                <textarea id="message" cols="0" rows="4" class="contact__input contact__textarea" placeholder="Message" required></textarea>
+                            </div>
+                            <input type="submit" value="Send Message" class="button contact__button contact__button--full">
+                        </form>
+                    </div>
+                    <div class="contact__illustration">
+                        <img src="assets/img/contact-register-feedback-support-help-concept.jpg" alt="Contact Illustration"/>
+                    </div>
+                </div>
+            </section>
+
         </main>
 
         <!--===== FOOTER =====-->
@@ -197,5 +220,7 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script src="assets/js/contact.js"></script>
     </body>
 </html>
